@@ -1,11 +1,11 @@
-package homework_java_introduction_03;
+package ND;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static homework_java_introduction_03.DigitSumCalculator.calculateDigitSum;
-import static homework_java_introduction_03.MathOperations.*;
-import static homework_java_introduction_03.TemperatureConverter.fahrenheitToCelsius;
+import static ND.DigitSumCalculator.calculateDigitSum;
+import static ND.MathOperations.*;
+import static ND.TemperatureConverter.fahrenheitToCelsius;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package homework_java_introduction_03;
+package ND;
 
 public class DigitSumCalculator {
     public static int calculateDigitSum(int number) {

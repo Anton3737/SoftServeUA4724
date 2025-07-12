@@ -1,4 +1,4 @@
-package homework_java_introduction_03.presentation_example;
+package ND;
 
 public class Student {
 

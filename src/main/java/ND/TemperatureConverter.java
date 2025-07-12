@@ -1,4 +1,4 @@
-package homework_java_introduction_03;
+package ND;
 
 public class TemperatureConverter {
     public static double fahrenheitToCelsius(double fahrenheit) {
