@@ -2,7 +2,6 @@ package homework_java_introduction_04.task5;
 
 public class Faculty {
 
-
     private String name;
     private int numberOfStudents;
     private Season season;

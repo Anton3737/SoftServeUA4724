@@ -63,6 +63,6 @@ public class Main {
             }
         }
 
-        System.out.println("Найстарший песик " + oldest.getName() + " віком " + oldest.getAge() + " породи " + oldest.getBreed().getKIND_OF_BREED());
+        System.out.println("Найстарший песик " + oldest.getName() + " віком " + oldest.getAge()+ " років " + "і породи " + oldest.getBreed().getKIND_OF_BREED());
     }
 }
