@@ -14,6 +14,7 @@ public class MyCollection {
         System.out.println("Current list " + myCollection);
 
 
+        // 1. Swap the maximum and minimum elements in the list
         int max = Collections.max(myCollection);
         int min = Collections.min(myCollection);
         int indexMax = myCollection.indexOf(max);
@@ -23,7 +24,8 @@ public class MyCollection {
         System.out.println("Swaped max і min indexes: " + myCollection);
 
 
-        int rndThreeDigit = new Random().nextInt(100); // [100;999]
+        // 2. Insert a random three-digit number before the first negative element of the list
+        int rndThreeDigit = new Random().nextInt(100);
         boolean inserted = false;
         for (int i = 0; i < myCollection.size(); i++) {
             if (myCollection.get(i) < 0) {
@@ -39,7 +41,7 @@ public class MyCollection {
 
         System.out.println("Після вставки тризначного перед першим негативним: " + myCollection);
 
-        // 4. Insert 0 between elements with different signs
+        // 3. Insert 0 between elements with different signs
         for (int i = 0; i < myCollection.size() - 1; i++) {
             int current = myCollection.get(i);
             int next = myCollection.get(i + 1);
@@ -50,7 +52,7 @@ public class MyCollection {
         }
         System.out.println("Після вставки 0 між різними знаками: " + myCollection);
 
-        // 5. Copy first k elements to list1, rest to list2 (reversed)
+        // 4. Copy first k elements to list1, rest to list2 (reversed)
         System.out.print("Введи k: ");
         int k = scanner.nextInt();
 
@@ -64,7 +66,7 @@ public class MyCollection {
         System.out.println("List1 (перші k): " + list1);
         System.out.println("List2 (решта у зворотному порядку): " + list2);
 
-        // 6. Remove last even element
+        // 5. Remove last even element
         boolean evenRemoved = false;
         for (int i = myCollection.size() - 1; i >= 0; i--) {
             if (myCollection.get(i) % 2 == 0) {
@@ -79,7 +81,7 @@ public class MyCollection {
             System.out.println("Після видалення останнього парного: " + myCollection);
         }
 
-        // 7. Remove element after first minimum
+        // 6. Remove element after first minimum
         int minValue = Collections.min(myCollection);
         int minIdx = myCollection.indexOf(minValue);
         if (minIdx < myCollection.size() - 1) {
